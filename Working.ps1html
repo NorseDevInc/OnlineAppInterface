@@ -43,7 +43,7 @@ $htmlContent = @"
             background-image: url('https://raw.githubusercontent.com/NorseDevInc/OnlineAppInterface/main/Background.png');
         }
         .checkbox {
-            top: 246px;
+            top: 600px;
             left: 136px;
             width: var(--dl-size-size-small);
             height: var(--dl-size-size-small);
