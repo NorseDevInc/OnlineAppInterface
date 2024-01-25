@@ -32,74 +32,74 @@ $htmlContent = @"
     <title>User Interactive Window</title>
     <style>
         .container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: flex-end;
-  flex-direction: row;
-  background-size: cover;
-  justify-content: flex-end;
-  background-image: url('https://raw.githubusercontent.com/NorseDevInc/OnlineAppInterface/main/Background.png');
-}
-.checkbox {
-  top: 246px;
-  left: 136px;
-  width: var(--dl-size-size-small);
-  height: var(--dl-size-size-small);
-  position: absolute;
-}
-.checkbox1 {
-  top: 305px;
-  left: 136px;
-  width: var(--dl-size-size-small);
-  height: var(--dl-size-size-small);
-  position: absolute;
-}
-.checkbox2 {
-  top: 187px;
-  left: 135px;
-  width: var(--dl-size-size-small);
-  height: var(--dl-size-size-small);
-  position: absolute;
-}
-.text {
-  top: 263px;
-  left: 192px;
-  width: var(--dl-size-size-xlarge);
-  height: var(--dl-size-size-small);
-  position: absolute;
-  font-size: 20px;
-  align-self: center;
-  font-family: "Poppins";
-}
-.text1 {
-  top: 319px;
-  left: 192px;
-  width: var(--dl-size-size-xlarge);
-  height: var(--dl-size-size-small);
-  position: absolute;
-  font-size: 20px;
-  align-self: center;
-  font-family: "Poppins";
-}
-.text2 {
-  top: 201px;
-  left: 191px;
-  width: var(--dl-size-size-xlarge);
-  height: var(--dl-size-size-small);
-  position: absolute;
-  font-size: 20px;
-  align-self: center;
-  font-family: "Poppins";
-}
-.button {
-  width: 289px;
-  height: 59px;
-  font-size: 40px;
-  margin-right: var(--dl-space-space-oneandhalfunits);
-  margin-bottom: var(--dl-space-space-oneandhalfunits);
-}
+            width: 100%;
+            display: flex;
+            overflow: auto;
+            min-height: 100vh;
+            align-items: flex-end;
+            flex-direction: row;
+            background-size: cover;
+            justify-content: flex-end;
+            background-image: url('https://raw.githubusercontent.com/NorseDevInc/OnlineAppInterface/main/Background.png');
+        }
+        .checkbox {
+            top: 246px;
+            left: 136px;
+            width: var(--dl-size-size-small);
+            height: var(--dl-size-size-small);
+            position: absolute;
+        }
+        .checkbox1 {
+            top: 305px;
+            left: 136px;
+            width: var(--dl-size-size-small);
+            height: var(--dl-size-size-small);
+            position: absolute;
+        }
+        .checkbox2 {
+            top: 187px;
+            left: 135px;
+            width: var(--dl-size-size-small);
+            height: var(--dl-size-size-small);
+            position: absolute;
+        }
+        .text {
+            top: 263px;
+            left: 192px;
+            width: var(--dl-size-size-xlarge);
+            height: var(--dl-size-size-small);
+            position: absolute;
+            font-size: 20px;
+            align-self: center;
+            font-family: "Poppins";
+        }
+        .text1 {
+            top: 319px;
+            left: 192px;
+            width: var(--dl-size-size-xlarge);
+            height: var(--dl-size-size-small);
+            position: absolute;
+            font-size: 20px;
+            align-self: center;
+            font-family: "Poppins";
+        }
+        .text2 {
+            top: 201px;
+            left: 191px;
+            width: var(--dl-size-size-xlarge);
+            height: var(--dl-size-size-small);
+            position: absolute;
+            font-size: 20px;
+            align-self: center;
+            font-family: "Poppins";
+        }
+        .button {
+            width: 289px;
+            height: 59px;
+            font-size: 40px;
+            margin-right: var(--dl-space-space-oneandhalfunits);
+            margin-bottom: var(--dl-space-space-oneandhalfunits);
+        }
     </style>
     <script>
         function callCustomPowerShellFunction() {
