@@ -125,16 +125,16 @@ $htmlContent = @"
     </script>
 </head>
 <body>
-    <div className='container'>
-      <input type="checkbox" checked="true" className='checkbox' />
-      <input type="checkbox" checked="true" className='checkbox1' />
-      <input type="checkbox" checked="true" className='checkbox2' />
-      <span className='text'>Norse auto clicker</span>
-      <span className='text1'>Google Chrome</span>
-      <span className='text2'>Visual studio code</span>
+    <div class='container'>
+      <input type="checkbox" checked="true" class='checkbox' />
+      <input type="checkbox" checked="true" class='checkbox1' />
+      <input type="checkbox" checked="true" class='checkbox2' />
+      <span class='text'>Norse auto clicker</span>
+      <span class='text1'>Google Chrome</span>
+      <span class='text2'>Visual studio code</span>
       <button
         type="button"
-        className='button'
+        class='button'
       >
         Install
       </button>
