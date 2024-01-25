@@ -61,13 +61,20 @@ $htmlContent = @"
     </script>
 </head>
 <body>
-    <h1>Hello, User!</h1>
-    <p>This is a custom user-interactive window.</p>
-
-    <!-- Button with an onclick attribute to call the JavaScript function -->
-    <button onclick="callCustomPowerShellFunction()">Call Custom PowerShell Function</button>
-    <button onclick="openNotepad()">Open Notepad</button>
-    <button onclick="openAlert()">Open Alert</button>
+    <div className='container'>
+      <input type="checkbox" checked="true" className='checkbox' />
+      <input type="checkbox" checked="true" className='checkbox1' />
+      <input type="checkbox" checked="true" className='checkbox2' />
+      <span className='text'>Norse auto clicker</span>
+      <span className='text1'>Google Chrome</span>
+      <span className='text2'>Visual studio code</span>
+      <button
+        type="button"
+        className='button'
+      >
+        Install
+      </button>
+    </div>
 </body>
 </html>
 "@
