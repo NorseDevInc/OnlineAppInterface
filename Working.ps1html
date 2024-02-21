@@ -162,9 +162,7 @@ $form.FormBorderStyle = [System.Windows.Forms.FormBorderStyle]::FixedSingle
 # Create a WebBrowser control
 $webBrowser = New-Object System.Windows.Forms.WebBrowser
 $webBrowser.ObjectForScripting = $psObject
-$webBrowser.DocumentText = @"
-$htmlContent
-"@
+
 $webBrowser.ScrollBarsEnabled = $false
 $webBrowser.ScriptErrorsSuppressed = $true
 $webBrowser.Size = New-Object System.Drawing.Size(1200, 800)
@@ -183,6 +181,10 @@ $webBrowser.Add_DocumentCompleted($documentCompletedHandler)
 
 # Add the WebBrowser control to the form
 $form.Controls.Add($webBrowser)
+
+$webBrowser.DocumentText = @"
+$htmlContent
+"@
 
 # Start the message loop
 [System.Windows.Forms.Application]::Run($form)
