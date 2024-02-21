@@ -16,6 +16,11 @@ Add-Type @"
             // Your custom PowerShell code goes here
             Console.WriteLine("Executing custom function in PowerShell script.");
         }
+
+        public void TabClicked(string tabName) {
+            // This method is called from JavaScript when a tab is clicked
+            Console.WriteLine("Tab clicked: " + tabName);
+        }
     }
 "@
 
@@ -92,37 +97,16 @@ $htmlContent = @"
 
     </style>
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const tabs = document.querySelectorAll(".tab");
-            const contents = document.querySelectorAll(".content");
-
-            tabs.forEach((tab, index) => {
-                tab.addEventListener("click", () => {
-                    // Hide all contents
-                    contents.forEach((content) => {
-                        content.classList.add("hidden");
-                    });
-
-                    // Show the selected content
-                    contents[index].classList.remove("hidden");
-
-                    // Remove active class from all tabs
-                    tabs.forEach((t) => {
-                        t.classList.remove("active");
-                    });
-
-                    // Add active class to the clicked tab
-                    tab.classList.add("active");
-                });
-            });
-        });
+        function tabClicked(tabName) {
+            window.external.TabClicked(tabName);
+        }
     </script>
 </head>
 <body>
     <ul class="tabs">
-        <li class="tab active">Tab 1</li>
-        <li class="tab">Tab 2</li>
-        <li class="tab">Tab 3</li>
+        <li class="tab active" onclick="tabClicked('Tab 1')">Tab 1</li>
+        <li class="tab" onclick="tabClicked('Tab 2')">Tab 2</li>
+        <li class="tab" onclick="tabClicked('Tab 3')">Tab 3</li>
     </ul>
 
     <div class="content">
