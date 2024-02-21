@@ -20,6 +20,9 @@ Add-Type @"
         public void TabClicked(string tabName) {
             // This method is called from JavaScript when a tab is clicked
             Console.WriteLine("Tab clicked: " + tabName);
+
+            //Remove the hidden class from the element
+            _webBrowser.Document.InvokeScript("activateContent", new object[] { tabName });
         }
     }
 "@
@@ -99,6 +102,11 @@ $htmlContent = @"
     <script>
         function tabClicked(tabName) {
             window.external.TabClicked(tabName);
+
+            const contents = document.querySelectorAll(".content");
+            contents.forEach((content) => {
+                        content.classList.add("hidden");
+                    });
         }
     </script>
 </head>
